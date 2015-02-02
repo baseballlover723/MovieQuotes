@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		61740BA11A718C4800BC37FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BA01A718C4800BC37FA /* AppDelegate.swift */; };
 		61740BA41A718C4800BC37FA /* MovieQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61740BA21A718C4800BC37FA /* MovieQuotes.xcdatamodeld */; };
-		61740BA61A718C4800BC37FA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BA51A718C4800BC37FA /* MasterViewController.swift */; };
-		61740BA81A718C4800BC37FA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BA71A718C4800BC37FA /* DetailViewController.swift */; };
 		61740BAB1A718C4800BC37FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61740BA91A718C4800BC37FA /* Main.storyboard */; };
 		61740BAD1A718C4800BC37FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61740BAC1A718C4800BC37FA /* Images.xcassets */; };
 		61740BB01A718C4800BC37FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61740BAE1A718C4800BC37FA /* LaunchScreen.xib */; };
 		61740BBC1A718C4800BC37FA /* MovieQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BBB1A718C4800BC37FA /* MovieQuotesTests.swift */; };
+		61740BC81A71935200BC37FA /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BC71A71935200BC37FA /* MovieQuotesTableViewController.swift */; };
+		61740BCA1A71974100BC37FA /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61740BC91A71974100BC37FA /* MovieQuote.swift */; };
+		617DF28C1A76DEC900667789 /* MovieQuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617DF28B1A76DEC900667789 /* MovieQuoteDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,15 @@
 		61740B9F1A718C4800BC37FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61740BA01A718C4800BC37FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61740BA31A718C4800BC37FA /* MovieQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieQuotes.xcdatamodel; sourceTree = "<group>"; };
-		61740BA51A718C4800BC37FA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		61740BA71A718C4800BC37FA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		61740BAA1A718C4800BC37FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61740BAC1A718C4800BC37FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		61740BAF1A718C4800BC37FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		61740BB51A718C4800BC37FA /* MovieQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61740BBA1A718C4800BC37FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61740BBB1A718C4800BC37FA /* MovieQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuotesTests.swift; sourceTree = "<group>"; };
+		61740BC71A71935200BC37FA /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
+		61740BC91A71974100BC37FA /* MovieQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
+		617DF28B1A76DEC900667789 /* MovieQuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuoteDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				61740BA01A718C4800BC37FA /* AppDelegate.swift */,
-				61740BA51A718C4800BC37FA /* MasterViewController.swift */,
-				61740BA71A718C4800BC37FA /* DetailViewController.swift */,
+				61740BC91A71974100BC37FA /* MovieQuote.swift */,
+				61740BC71A71935200BC37FA /* MovieQuotesTableViewController.swift */,
+				617DF28B1A76DEC900667789 /* MovieQuoteDetailViewController.swift */,
 				61740BA91A718C4800BC37FA /* Main.storyboard */,
 				61740BAC1A718C4800BC37FA /* Images.xcassets */,
 				61740BAE1A718C4800BC37FA /* LaunchScreen.xib */,
@@ -219,9 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61740BA11A718C4800BC37FA /* AppDelegate.swift in Sources */,
+				617DF28C1A76DEC900667789 /* MovieQuoteDetailViewController.swift in Sources */,
+				61740BCA1A71974100BC37FA /* MovieQuote.swift in Sources */,
 				61740BA41A718C4800BC37FA /* MovieQuotes.xcdatamodeld in Sources */,
-				61740BA61A718C4800BC37FA /* MasterViewController.swift in Sources */,
-				61740BA81A718C4800BC37FA /* DetailViewController.swift in Sources */,
+				61740BC81A71935200BC37FA /* MovieQuotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				61740BC11A718C4800BC37FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61740BC21A718C4800BC37FA /* Build configuration list for PBXNativeTarget "MovieQuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				61740BC41A718C4800BC37FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
